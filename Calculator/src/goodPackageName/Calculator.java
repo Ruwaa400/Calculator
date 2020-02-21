@@ -9,14 +9,18 @@ public class Calculator {
 		int x, y;
 
 		System.out.println("first number x:");
-		x = 10;//scanner.nextInt();
+		x = 10;// scanner.nextInt();
 
 		System.out.println("second number y:");
-		y = 10;//scanner.nextInt();
+		y = 10;// scanner.nextInt();
 
-		int z = x + y;
+		int z = add(x, y);
 		System.out.println("x + y = " + z);
 
+	}
+
+	public static int add(int x, int y) {
+		return x + y;
 	}
 
 }
