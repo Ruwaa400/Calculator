@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project default="run" name="Calculator">
+
+	<target name="clean">
+		<delete dir="staging" />
+	</target>
+
+	<target name="compile">
+		<javac srcdir="./src" destdir="staging"
+			includeantruntime="false" />
+	</target>
+
+	<target name="run" depends="compile">
+		<java classname="goodPackageName.Calculator">
+			<classpath path="staging" />
+		</java>
+	</target>
+
+</project>
