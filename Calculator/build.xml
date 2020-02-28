@@ -43,9 +43,10 @@
 
 
 	<target name="run" depends="compile, compile-testcases, test">
-		<java classname="goodPackageName.Calculator">
+	<!--	<java classname="goodPackageName.Calculator">
 			<classpath path="staging" />
-		</java>
+		</java> -->
 	</target>
 
+	
 </project>
